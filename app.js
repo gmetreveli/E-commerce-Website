@@ -112,7 +112,6 @@ links.forEach((link) => {
     let flistItemProds = [...fLists[fLists.length - 1].children];
     flistItemProds.forEach((item, index) => {
       item.textContent = data[attr].title[index];
-      console.log(item.textContent);
     });
   });
 });
@@ -131,8 +130,6 @@ menuItems.forEach((item, index) => {
 
     //change texts of currentProduct
     currentProductTitle.textContent = chosenTitle;
-    console.log(chosenTitle);
-    console.log(chosenProduct.title);
     currentProductPrice.textContent = "$" + chosenProduct.price;
     currentProductImg.src = chosenProduct.colors[0].img;
 
