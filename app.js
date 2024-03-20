@@ -1,4 +1,5 @@
 const wrapper = document.querySelector(".sliderWrapper");
+const navBottom = document.querySelector(".navBottom");
 const menuItems = document.querySelectorAll(".menuItem");
 const fLists = document.querySelectorAll(".fList");
 const fListItems = document.querySelectorAll(".fListItem");
@@ -121,6 +122,10 @@ let chosenTitle = data.georgian.title[0];
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
+    //Change active slide underline
+    navBottom.querySelector(".active").classList.remove("active");
+    item.classList.add("active");
+
     //change the current slide in wrapper
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
