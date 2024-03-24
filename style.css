@@ -516,6 +516,8 @@ footer {
   font-size: 14px;
 }
 
+/* Mobile */
+
 @media screen and (max-width: 480px) {
   nav {
     padding: 20px;
@@ -566,7 +568,7 @@ footer {
 
   .sliderPrice {
     top: unset;
-    bottom: -50px;
+    bottom: 0px;
     left: 0;
     background-color: lightgray;
   }
